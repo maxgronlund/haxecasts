@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -10,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110827172857) do
+ActiveRecord::Schema.define(:version => 20110828101630) do
 
   create_table "comments", :force => true do |t|
     t.text     "body"
@@ -62,6 +63,7 @@ ActiveRecord::Schema.define(:version => 20110827172857) do
     t.string   "image"
     t.string   "crop_params", :limit => 1024
     t.text     "notes"
+    t.integer  "episode_nr"
   end
 
 end

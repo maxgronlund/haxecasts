@@ -26,6 +26,7 @@ class VideoCastsController < InheritedResources::Base
     
     @video_cast = VideoCast.find(params[:id])
     session[:go_to_after_edit] = video_cast_path{@video_cast}   
+    @episode_nr = '#' + @video_cast.episode_nr.to_s
 
   end
   

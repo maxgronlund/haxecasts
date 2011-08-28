@@ -136,7 +136,8 @@ a, a:hover, a:active, a:visited, a:link {
 }
 
 .search-bar{
-	height:32px;
+	height:26px;
+	margin-top:6px;
 }
 
 .haxe{
@@ -195,11 +196,14 @@ a, a:hover, a:active, a:visited, a:link {
 }
 
 .front-page{
-	h2{
-		@include font-header;
+	h1{
 		a{
-			color:#F4922D;
+			color:#000;
 		}
 	}
+}
+
+.sublime{
+	background-color:#000;
 }
 

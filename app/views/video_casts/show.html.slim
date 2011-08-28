@@ -1,22 +1,25 @@
-.grid-12.top-margin
- 
-.grid-12
-  p#notice = notice
+
 
 .grid-12
+  .grid-1.alpha.edit
+    h1 = @episode_nr
+ 
+  .grid-11.omega
+    h1 =  @video_cast.title
+.grid-11.prefix-1
+  = markdown(@video_cast.body)
+      
+.grid-12.top-margin
   = render 'video'
 
 .grid-12
-  = markdown(@video_cast.body)
+  = markdown(@video_cast.notes)
   -if can?(:manage, VideoCast)
     .edit
       = link_to t('system.edit'), edit_video_cast_path(@video_cast)
 
 = render 'comments'
 
-- if can?(:create, Comment)
-  .grid-12
-    = link_to 'add comment', new_video_cast_comment_path(@video_cast)
 
 
 

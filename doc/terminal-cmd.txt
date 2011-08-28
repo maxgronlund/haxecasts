@@ -1,0 +1,1 @@
+rails g migration AddEpisodeNrToVideoCasts episode_nr:integer
