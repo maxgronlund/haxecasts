@@ -1,0 +1,6 @@
+- [:notice, :warning, :error, :failure, :success].each do |key|
+  - unless flash[key].blank?
+    .grid-4.suffix-8
+       div class="flash #{key}"
+         .message
+           = flash[key]

@@ -1,0 +1,32 @@
+.grid-12.search-line
+  = form_tag video_casts_path, :method => 'get', :id => "products_search" do
+    = text_field_tag :search, params[:search] 
+    = submit_tag t('system.search'), :title => nil
+    '
+    = link_to t('system.show_all'), video_casts_path
+
+.front-page
+
+  - @video_casts.each do |video_cast|
+  
+    .grid-12.top-margin
+  
+    .grid-4
+        = link_to image_tag(video_cast.image_url :large), video_cast_path(video_cast) if video_cast.image?
+    .grid-2
+      h2 = link_to video_cast.title, video_cast
+    .grid-8
+      = markdown(video_cast.notes)
+    .grid-2.omega
+      = link_to t('system.show'), video_cast, class: 'fancy'
+      - if can?(:manage, VideoCast)
+        .edit
+          = link_to t('system.edit'), edit_video_cast_path(video_cast)
+          '&nbsp; 
+          = link_to t('system.delete'), video_cast, :confirm => 'Are you sure?', :method => :delete
+  .pagination-12 
+    = paginate @video_casts
+  - if can?(:manage, VideoCast)
+    .grid-12.edit
+      = link_to t('video_cast.new'), new_video_cast_path, class: 'fancy'
+  

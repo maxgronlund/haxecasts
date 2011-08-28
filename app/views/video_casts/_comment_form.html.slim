@@ -1,0 +1,11 @@
+.grid-1
+
+.grid-7
+  = simple_form_for [video_cast, comment] do |f|
+    
+    = render 'shared/error_messages', :taget => comment
+    = f.text_area :body, :rows => 6, :cols => 92
+    = f.hidden_field :video_cast_id
+    .actions.edit.top-margin
+      = f.submit 'Save'
+.grid-4

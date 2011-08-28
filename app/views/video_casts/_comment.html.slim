@@ -1,0 +1,23 @@
+.grid-1
+  = image_tag(comment.user.image_url :small) if comment.user.image?
+
+.grid-7
+  .comment-header
+    .content
+      b = comment.user.name 
+      '&nbsp; - &nbsp
+      i = comment.created_at.strftime("%d.%m.%Y")
+  .border-box 
+    .content
+      = markdown(comment.body)
+      .edit
+        -if can?(:manage, Comment)
+          = link_to 'edit', edit_video_cast_comment_path(comment.video_cast, comment)
+          '&nbsp;|&nbsp;
+          = link_to  'delete', comment, :confirm => 'Are you sure?', :method => :delete
+
+.grid-12
+
+
+
+
