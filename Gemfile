@@ -1,6 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.1.0.rc6'
+gem 'sprockets', '2.0.0.beta.13'
 gem 'rails-i18n'
 
 # Bundle edge Rails instead:
