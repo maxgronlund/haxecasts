@@ -1,4 +1,4 @@
-RailsTemplateR31::Application.routes.draw do
+HaXeCasts::Application.routes.draw do
   resources :comments
 
   resources :video_casts
@@ -90,7 +90,7 @@ RailsTemplateR31::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
 end
-RailsTemplateR31::Application.routes.draw do
+HaXeCasts::Application.routes.draw do
   resources :comments
 
   resources :video_casts
@@ -178,7 +178,7 @@ RailsTemplateR31::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
 end
-RailsTemplateR31::Application.routes.draw do
+HaXeCasts::Application.routes.draw do
   resources :comments
 
   resources :video_casts
