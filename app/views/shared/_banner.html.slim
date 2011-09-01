@@ -1,6 +1,7 @@
 
 .grid-8.haxe.top-banner
-  = link_to image_tag('logo.png'), root_path
+  .logo
+    = link_to image_tag('logo.png'), root_path
 
 .grid-4.edit.top-banner
   - if user_signed_in?

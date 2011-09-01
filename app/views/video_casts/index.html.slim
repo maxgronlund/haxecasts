@@ -16,6 +16,8 @@
       = markdown(video_cast.body)
       .grid-8.alpha.omega
         = link_to t('system.show'), video_cast, class: 'fancy'
+    .grid-12
+      hr
         
   .pagination-12 
     = paginate @video_casts
