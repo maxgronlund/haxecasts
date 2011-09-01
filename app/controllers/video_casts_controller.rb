@@ -6,6 +6,7 @@ class VideoCastsController < InheritedResources::Base
     @menu = 'admin'
     session[:go_to_after_edit] = video_casts_path
     @video_casts = VideoCast.search(params[:search]).order(sort_column + " " + sort_direction).page(params[:page]).per(25)
+
     
     
   end

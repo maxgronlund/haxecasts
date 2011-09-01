@@ -13,6 +13,8 @@
             = link_to t('system.delete'), video_cast, :confirm => 'Are you sure?', :method => :delete
     .grid-8
       h1 = link_to video_cast.title, video_cast
+      b Episode # 
+      b = video_cast.episode_nr
       = markdown(video_cast.body)
       .grid-8.alpha.omega
         = link_to t('system.show'), video_cast, class: 'fancy'
