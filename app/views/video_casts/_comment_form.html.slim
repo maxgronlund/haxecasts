@@ -1,8 +1,7 @@
-.grid-12
-  b add a comment
-.grid-1
 
-.grid-7
+
+.grid-8.prefix-1.alpha
+  b add a comment
   = simple_form_for [video_cast, comment] do |f|
     
     = render 'shared/error_messages', :taget => comment
@@ -10,4 +9,3 @@
     = f.hidden_field :video_cast_id
     .actions.edit.top-margin
       = f.submit 'Save'
-.grid-4

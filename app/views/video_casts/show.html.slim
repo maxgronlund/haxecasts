@@ -17,9 +17,12 @@
 
 .grid-12
   = markdown(@video_cast.notes)
- 
-
-= render 'comments'
+.grid-9
+  = link_to 'add code' , new_video_cast_code_example_path(@video_cast)
+  br
+  = render 'code_examples'
+  = render 'comments'
+.grid-3
 
 
 

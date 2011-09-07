@@ -12,6 +12,10 @@
 //- require tiny_mce/tiny_mce
 //= require rails.validations
 
+//= require sh_haxe
+//= require sh_main.min
+//= require rails.validations
+
 
 $(function() {
 	$('form.upload').bind('submit', function() {

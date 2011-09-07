@@ -1,6 +1,6 @@
 # encoding: utf-8
 class VideoCast < ActiveRecord::Base
-
+  has_many :code_examples
   has_many :comments
 
   

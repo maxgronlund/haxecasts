@@ -17,7 +17,7 @@ html
       var session_key_name = '#{Rails.application.config.session_options[:key]}';
     = yield :head 
 
-  body.body-color class=("#{controller.controller_name} #{controller.controller_name}-#{params[:action]}")
+  body.body-color class=("#{controller.controller_name} #{controller.controller_name}-#{params[:action]}") onload="sh_highlightDocument();
     .top_banner
       .grid-container.content-color class=("background_grid" if grid_is_on?)
         -#= render "shared/jmenu"

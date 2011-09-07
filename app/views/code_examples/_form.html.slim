@@ -1,0 +1,8 @@
+= simple_form_for [@video_cast, @code_example] do |f|
+  = render 'shared/error_messages', :taget => @code_example
+
+  = f.input :title
+  = f.text_area :body, :rows => 6, :cols => 110
+
+  .actions
+    = f.submit 'Save'

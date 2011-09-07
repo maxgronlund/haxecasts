@@ -1,7 +1,7 @@
-.grid-1
+.grid-1.alpha
   = image_tag(comment.user.image_url :small) if comment.user.image?
 
-.grid-7
+.grid-8.omega
   .comment-header
     .content
       b = comment.user.name 
@@ -16,7 +16,7 @@
           '&nbsp;|&nbsp;
           = link_to  'delete', comment, :confirm => 'Are you sure?', :method => :delete
 
-.grid-12
+
 
 
 

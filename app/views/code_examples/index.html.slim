@@ -1,0 +1,21 @@
+h1 Listing code_examples
+
+table
+  tr
+    th Title
+    th Body
+    th
+    th
+    th
+
+  - @code_examples.each do |code_example|
+    tr
+      td= code_example.title
+      td= code_example.body
+      td= link_to 'Show', code_example
+      td= link_to 'Edit', edit_code_example_path(code_example)
+      td= link_to 'Destroy', code_example, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Code example', new_code_example_path
