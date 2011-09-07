@@ -5,4 +5,9 @@
   pre.sh_haxe
     .code
       =raw code_example.body
+  .edit
+    - if can_edit?
+      = link_to 'edit code' , edit_video_cast_code_example_path(@video_cast, code_example)
+      | | 
+      = link_to 'delete', code_example, :confirm => 'Are you sure?', :method => :delete
   
