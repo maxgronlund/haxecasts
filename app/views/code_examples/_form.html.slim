@@ -1,8 +1,19 @@
 = simple_form_for [@video_cast, @code_example] do |f|
   = render 'shared/error_messages', :taget => @code_example
-
-  = f.input :title
+  'text
+  br
+  = f.text_area :comment, :rows => 6, :cols => 110
+  hr
+  b source code
+  br
+  = f.input :title, :label => 'file name *required'
+  br
+  'code
+  br
   = f.text_area :body, :rows => 6, :cols => 110
+  .field
+    = f.check_box :haxe_syntax
+    '&nbsp; haxe syntax
 
-  .actions
-    = f.submit 'Save'
+  br
+  = f.submit 'Save'

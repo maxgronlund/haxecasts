@@ -13,6 +13,7 @@
 //= require rails.validations
 
 //= require sh_haxe
+//= require sh_html
 //= require sh_main.min
 //= require rails.validations
 

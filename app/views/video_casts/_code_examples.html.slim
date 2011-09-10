@@ -1,13 +1,30 @@
+.grid-9.alpha.omaga
 
--for code_example in @video_cast.code_examples do
-  b = code_example.title
-
-  pre.sh_haxe
-    .code
-      =raw code_example.body
-  .edit
-    - if can_edit?
-      = link_to 'edit code' , edit_video_cast_code_example_path(@video_cast, code_example)
-      | | 
-      = link_to 'delete', code_example, :confirm => 'Are you sure?', :method => :delete
   
+  -for code_example in @video_cast.code_examples do
+    = markdown(code_example.comment) if code_example.comment
+    - if code_example.title != ''
+      .code_box
+        .header 
+          = code_example.title
+          br
+      - if code_example.body != ''
+        -if code_example.haxe_syntax
+          pre.sh_haxe
+            .code
+              =raw code_example.body 
+        -else
+          pre.sh_html
+            .code
+              =  code_example.body
+
+    .edit
+      - if can_edit?
+        = link_to 'edit code' , edit_video_cast_code_example_path(@video_cast, code_example)
+        | | 
+        = link_to 'delete', code_example, :confirm => 'Are you sure?', :method => :delete
+    
+
+  - if can_edit?
+    .edit
+      = link_to 'new code example' , new_video_cast_code_example_path(@video_cast)

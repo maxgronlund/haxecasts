@@ -1,0 +1,2 @@
+module ResourceUrlsHelper
+end

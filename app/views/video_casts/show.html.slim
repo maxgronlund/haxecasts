@@ -14,16 +14,13 @@
   -if can?(:manage, VideoCast)
     .edit
       = link_to t('system.edit'), edit_video_cast_path(@video_cast)
-
 .grid-12
-  = markdown(@video_cast.notes)
-.grid-9
-  - if can_edit?
-    = link_to 'add code' , new_video_cast_code_example_path(@video_cast)
-  br
-  = render 'code_examples'
-  = render 'comments'
-.grid-3
+  .grid-9.alpha
+      = markdown(@video_cast.notes)
+      = render 'code_examples'
+      = render 'comments'
+
+  .grid-3.omega
 
 
 

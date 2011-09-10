@@ -1,0 +1,12 @@
+p#notice = notice
+
+p
+  b Resource url:
+  = @resource_url.resource_url
+p
+  b Video cast:
+  = @resource_url.video_cast_id
+
+= link_to 'Edit', edit_resource_url_path(@resource_url)
+'|
+= link_to 'Back', resource_urls_path

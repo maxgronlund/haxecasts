@@ -17,7 +17,6 @@ class CommentsController < InheritedResources::Base
   end
   
   def destroy
-
     destroy! { session[:go_to_after_edit] }
   end
   

@@ -1,7 +1,8 @@
--for comment in @video_cast.comments do
-  = render :partial => 'comment', :locals => { :comment => comment}
-  br
-
-- if can?(:create, Comment)
-  = render :partial => 'comment_form', :locals => {:video_cast => @video_cast, :comment => @video_cast.comments.build }
+.grid-9.alpha.omega.comments
+  -for comment in @video_cast.comments do
+    = render :partial => 'comment', :locals => { :comment => comment}
+    br
+  
+  - if can?(:create, Comment)
+    = render :partial => 'comment_form', :locals => {:video_cast => @video_cast, :comment => @video_cast.comments.build }
 

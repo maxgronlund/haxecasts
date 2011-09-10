@@ -12,7 +12,9 @@ class VideoCastsController < InheritedResources::Base
   end
   
   def show
-    
+
+
+
     if browser.firefox?
       @video = VideoCast.find(params[:id]).ogv
     elsif browser.safari?
@@ -28,6 +30,8 @@ class VideoCastsController < InheritedResources::Base
     @video_cast = VideoCast.find(params[:id])
     session[:go_to_after_edit] = video_cast_path{@video_cast}   
     @episode_nr = '#' + @video_cast.episode_nr.to_s
+    
+
 
   end
   
@@ -70,4 +74,6 @@ private
   def sort_direction  
     %w[asc desc].include?(params[:direction]) ?  params[:direction] : "asc"  
   end
+  
+  
 end

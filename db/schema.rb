@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110907194242) do
+ActiveRecord::Schema.define(:version => 20110910173203) do
 
   create_table "code_examples", :force => true do |t|
     t.string   "title"
@@ -19,11 +19,20 @@ ActiveRecord::Schema.define(:version => 20110907194242) do
     t.integer  "video_cast_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "comment"
+    t.boolean  "haxe_syntax"
   end
 
   create_table "comments", :force => true do |t|
     t.text     "body"
     t.integer  "user_id"
+    t.integer  "video_cast_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "resource_urls", :force => true do |t|
+    t.string   "resource_url"
     t.integer  "video_cast_id"
     t.datetime "created_at"
     t.datetime "updated_at"

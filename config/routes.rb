@@ -1,8 +1,7 @@
 HaXeCasts::Application.routes.draw do
-  resources :code_examples
-
-  resources :comments
-
+#  resources :resource_urls
+#  resources :code_examples
+#  resources :comments
   resources :video_casts
   
 #  resources :video_casts do
@@ -27,8 +26,9 @@ HaXeCasts::Application.routes.draw do
       get 'crop'
       put 'crop_update'
     end
-    resources :comments
+    resources :resource_urls
     resources :code_examples
+    resources :comments
   end
   
 #  get "home/index"
@@ -94,6 +94,8 @@ HaXeCasts::Application.routes.draw do
   # match ':controller(/:action(/:id(.:format)))'
 end
 HaXeCasts::Application.routes.draw do
+  resources :resource_urls
+
   resources :code_examples
 
   resources :comments
@@ -184,6 +186,8 @@ HaXeCasts::Application.routes.draw do
   # match ':controller(/:action(/:id(.:format)))'
 end
 HaXeCasts::Application.routes.draw do
+  resources :resource_urls
+
   resources :code_examples
 
   resources :comments
