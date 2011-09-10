@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(:version => 20110910173203) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "comment"
-    t.boolean  "haxe_syntax"
+    t.string   "haxe_syntax"
   end
 
   create_table "comments", :force => true do |t|

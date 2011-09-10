@@ -12,8 +12,11 @@
   br
   = f.text_area :body, :rows => 6, :cols => 110
   .field
-    = f.check_box :haxe_syntax
-    '&nbsp; haxe syntax
+    = f.input :haxe_syntax , :include_blank => false, :collection => CodeExample::SYNTAX, :label => 'syntax'
+    -#'&nbsp; haxe syntax
 
   br
   = f.submit 'Save'
+
+
+ 

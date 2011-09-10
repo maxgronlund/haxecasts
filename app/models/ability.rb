@@ -8,6 +8,7 @@ class Ability
       elsif user.admin?
         can :manage, Comment
         can :manage, User
+        can :manage, ResourceUrl
         can :manage, TextContent
         can :read, VideoCast
         

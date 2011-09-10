@@ -9,7 +9,7 @@
           = code_example.title
           br
       - if code_example.body != ''
-        -if code_example.haxe_syntax
+        -if code_example.haxe_syntax == 'sh_haxe'
           pre.sh_haxe
             .code
               =raw code_example.body 
