@@ -15,6 +15,10 @@
       h1 = link_to video_cast.title, video_cast
       b Episode # 
       b = video_cast.episode_nr
+      '&nbsp;
+      'time 
+      '-
+      = video_cast.play_time
       = markdown(video_cast.body)
       .grid-8.alpha.omega
         = link_to t('system.show'), video_cast, class: 'fancy'

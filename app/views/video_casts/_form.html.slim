@@ -2,6 +2,7 @@
   = simple_form_for @video_cast do |f|
     = render 'shared/error_messages', :taget => @video_cast
     = f.input :title
+    = f.input :play_time
     = f.input :episode_nr
     = f.input :body
     = f.input :notes

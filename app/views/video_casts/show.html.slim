@@ -1,13 +1,17 @@
 
 .header
   .grid-12
-    .grid-1.alpha.edit
-      h1 = @episode_nr
+    .grid-1.alpha
+      .edit
+        h1 = @episode_nr
+      'time 
+      '-
+      = @video_cast.play_time
    
     .grid-11.omega
       h1 =  @video_cast.title
-.grid-7.prefix-1.suffix-4
-  = markdown(@video_cast.body)
+      .grid-8.suffix-3.alpha.omega
+        = markdown(@video_cast.body)
       
 .grid-12.top-margin
   = render 'video'

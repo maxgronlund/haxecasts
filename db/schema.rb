@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110910173203) do
+ActiveRecord::Schema.define(:version => 20110910224044) do
 
   create_table "code_examples", :force => true do |t|
     t.string   "title"
@@ -81,6 +81,7 @@ ActiveRecord::Schema.define(:version => 20110910173203) do
     t.string   "crop_params", :limit => 1024
     t.text     "notes"
     t.integer  "episode_nr"
+    t.string   "play_time"
   end
 
 end
