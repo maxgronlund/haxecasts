@@ -21,7 +21,8 @@
 .grid-12
   .grid-9.alpha
       = render 'resource_urls'
-      = markdown(@video_cast.notes)
+      .grid-9.alpha.omega.top-margin
+        = markdown(@video_cast.notes)
       = render 'code_examples'
       = render 'comments'
 

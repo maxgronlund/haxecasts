@@ -1,13 +1,15 @@
-
-- @video_cast.resource_urls.each do |resource_url|
-  .grid-7.alpha.resource_box
-    = link_to ' • '+resource_url.resource_url, resource_url.resource_url
-  .grid-2.omega
-    - if can?(:manage , ResourceUrl )
-      .edit
-        = link_to 'edit', edit_video_cast_resource_url_path(resource_url)
-        '&nbsp;|&nbsp;
-        = link_to 'delete', resource_url, :confirm => 'Are you sure?', :method => :delete
-
-.edit
-  = link_to 'new link', new_video_cast_resource_url_path(@video_cast)
+.grid-9.alpha.omega.top-margin
+  - @video_cast.resource_urls.each do |resource_url|
+    .grid-7.alpha.resource_box
+      = link_to ' • '+resource_url.resource_url, resource_url.resource_url
+    .grid-2.omega
+      - if can_edit?
+        .edit
+          = link_to 'edit', edit_video_cast_resource_url_path(resource_url)
+          '&nbsp;|&nbsp;
+          = link_to 'delete', resource_url, :confirm => 'Are you sure?', :method => :delete
+  
+  -if can_edit?
+    .grid-9.alpha.omega
+        = link_to 'new link', new_video_cast_resource_url_path(@video_cast)
+  

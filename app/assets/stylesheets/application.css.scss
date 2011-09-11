@@ -154,9 +154,6 @@ a, a:hover, a:active, a:visited, a:link {
 	}
 }
 
-
-
-
 .headline { 
 	@include template-color; @include font-header; 
 	min-height:32px; 
