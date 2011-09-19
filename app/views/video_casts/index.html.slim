@@ -5,7 +5,8 @@
     .grid-12.top-margin
   
     .grid-4
-        = link_to image_tag(video_cast.image_url :large), video_cast_path(video_cast) if video_cast.image?
+        .image-box
+          = link_to image_tag(video_cast.image_url :large), video_cast_path(video_cast) if video_cast.image?
         - if can?(:manage, VideoCast)
           .edit
             = link_to t('system.edit'), edit_video_cast_path(video_cast)
