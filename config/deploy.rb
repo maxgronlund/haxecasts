@@ -6,6 +6,7 @@ set :rvm_type, :user
 
 # bundler bootstrap
 require 'bundler/capistrano'
+load 'deploy/assets'
 
 # main details
 set :application, "haxecasts"                               
