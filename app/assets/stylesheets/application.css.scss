@@ -36,8 +36,8 @@ a, a:hover, a:active, a:visited, a:link {
 }
 
 .top_banner{
-
-	background-image:url('top_banner_back.png');
+	@include background(image-url("foo.png"), linear-gradient(center top, #FFFFFF, #E4E4E4));
+/*	background-image:url('top_banner_back.png');*/
 	background-repeat:repeat-x;
 	height:112px;
 	margin-top:0px;
