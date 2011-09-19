@@ -37,7 +37,7 @@ a, a:hover, a:active, a:visited, a:link {
 
 .top_banner{
 
-	background-image:url('/assets/top_banner_back.png');
+	background-image:url('top_banner_back.png');
 	background-repeat:repeat-x;
 	height:112px;
 	margin-top:0px;
@@ -68,7 +68,7 @@ a, a:hover, a:active, a:visited, a:link {
 	color:#000;
 	.asc {
 		padding-right:20px;
-		background-image:url('arrow_down.png');
+		background-image:url('assets/arrow_down.png');
 		background-repeat:no-repeat;
 		background-color:transparent;
 		background-position:right top;
@@ -148,7 +148,7 @@ a, a:hover, a:active, a:visited, a:link {
 	
 	.logo{
 		background-image:url('haxe-cast-logo.png');
-		width:250px;
+		width:423px;
 		height:62px;
 		display:block;
 	}
