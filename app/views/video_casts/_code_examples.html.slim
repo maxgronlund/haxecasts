@@ -10,7 +10,7 @@
             = code_example.title
           .grid-3.alpha.omega.edit
             -if code_example.haxe_syntax != 'sh_html'
-              = raw clippy(code_example.body).html_safe
+              =raw clippy(code_example.body).html_safe
           br
       - if code_example.body != ''
         -if code_example.haxe_syntax == 'sh_haxe'
