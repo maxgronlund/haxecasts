@@ -191,7 +191,6 @@ a, a:hover, a:active, a:visited, a:link {
 		p{
 			margin:0px;
 		}
-
 	}
 }
 
@@ -233,4 +232,14 @@ a, a:hover, a:active, a:visited, a:link {
 	.header{
 		padding:8px;
 	}
+}
+
+.image-box{
+	width:323px;
+	height:200px;
+	display:block;
+	overflow:hidden;
+	border-style:solid;
+	border-width:1px;
+	border-color:#888;
 }
