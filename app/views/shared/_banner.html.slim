@@ -1,9 +1,14 @@
 
-.grid-8.haxe.top-banner
+.grid-5.haxe.top-banner
   .logo
     = link_to image_tag('haxecast.png'), root_path
-
-.grid-4.edit.top-banner
+  
+.grid-4.top-banner
+  .banner-teaser
+    b Building flash files using HaXe 
+    br
+    'haXe is an open source programming language
+.grid-3.edit.top-banner
   - if user_signed_in?
     = link_to current_user.email, current_user
     '&nbsp;|&nbsp;
