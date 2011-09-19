@@ -13,7 +13,7 @@
       .content
         = markdown(comment.body)
         .edit
-          -if can?(:manage, Comment)
+          -if can?(:manage, comment)
             = link_to 'edit', edit_video_cast_comment_path(comment.video_cast, comment)
             '&nbsp;|&nbsp;
             = link_to  'delete', comment, :confirm => 'Are you sure?', :method => :delete

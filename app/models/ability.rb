@@ -18,7 +18,7 @@ class Ability
       elsif user.member?
         # Ordinary user
         can :create, Comment
-        can :manage, Comment, :id => user.id # <--- Allow user to manage own comments
+        can :manage, Comment, :user_id => user.id # <--- Allow user to manage own comments
         can :manage, User, :id => user.id # <--- Allow user to manage self
         can :read, TextContent
         can :read, VideoCast

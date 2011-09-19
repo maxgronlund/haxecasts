@@ -5,4 +5,10 @@
   
   - if can?(:create, Comment)
     = render :partial => 'comment_form', :locals => {:video_cast => @video_cast, :comment => @video_cast.comments.build }
+  - else
+    .grid-8.prefix-1.alpha.omega
+      b
+        = link_to 'sign up to leave a comment', new_user_registration_path 
+        '&nbsp; or &nbsp;
+        = link_to 'log in to leave a comment', user_session_path
 

@@ -36,7 +36,7 @@
   
 
 
-  - if current_user && current_user.admin_or_super?
+  - if can_edit?
     = f.input :role , :include_blank => false, :collection => User::ROLES unless @user.is_first_user?
   br
   .actions
