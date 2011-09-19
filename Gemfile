@@ -1,7 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0.rc6'
-gem 'sprockets', '2.0.0.beta.13'
+gem 'rails', '3.1.0'
 gem 'rails-i18n'
 
 # Bundle edge Rails instead:
@@ -60,7 +59,7 @@ group :test do
 end
 
 
-gem "compass", :git => "git://github.com/chriseppstein/compass.git", :branch => "rails31"
+gem "compass", :git => "git://github.com/chriseppstein/compass.git", :branch => "master"
 gem 'chunky_png' # compass HEAD uses this for sass sprites, but lacks dependency :(
 gem "compass-960-plugin", :require => "ninesixty"
 
