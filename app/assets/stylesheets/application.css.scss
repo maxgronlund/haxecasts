@@ -37,7 +37,7 @@ a, a:hover, a:active, a:visited, a:link {
 
 .top_banner{
 /*	@include background(image-url("foo.png"), linear-gradient(center top, #FFFFFF, #E4E4E4));*/
-	background-image:url('top_banner_back.png');
+	background-image:url('<%= asset_path "top_banner_back.png" %>');
 	background-repeat:repeat-x;
 	height:112px;
 	margin-top:0px;
@@ -61,25 +61,6 @@ a, a:hover, a:active, a:visited, a:link {
 .row-flop
 {
 	background-color:#ccc;
-}
-
-.sort-list-header {
-	background-color:#aaa;
-	color:#000;
-	.asc {
-		padding-right:20px;
-		background-image:url('/assets/arrow_down.png');
-		background-repeat:no-repeat;
-		background-color:transparent;
-		background-position:right top;
-	}
-	.desc {
-		padding-right:20px;
-		background-image:url('arrow_up.png');
-		background-repeat:no-repeat;
-		background-color:transparent;
-		background-position:right top;
-	}
 }
 
 /* FIXME where is this used? */
