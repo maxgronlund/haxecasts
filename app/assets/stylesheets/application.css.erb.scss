@@ -63,6 +63,25 @@ a, a:hover, a:active, a:visited, a:link {
 	background-color:#ccc;
 }
 
+.sort-list-header {
+	background-color:#aaa;
+	color:#000;
+	.asc {
+		padding-right:20px;
+		background-image:url('<%= asset_path "arrow_down.png" %>');
+		background-repeat:no-repeat;
+		background-color:transparent;
+		background-position:right top;
+	}
+	.desc {
+		padding-right:20px;
+		background-image:url('<%= asset_path "arrow_up.png" %>');
+		background-repeat:no-repeat;
+		background-color:transparent;
+		background-position:right top;
+	}
+}
+
 /* FIXME where is this used? */
 .current {
   padding-right: 12px;
@@ -128,7 +147,7 @@ a, a:hover, a:active, a:visited, a:link {
 	@include template-color; @include font-header;
 	
 	.logo{
-		background-image:url('haxe-cast-logo.png');
+		background-image:url('<%= asset_path "haxe-cast-logo.png" %>');
 		width:423px;
 		height:62px;
 		display:block;
@@ -146,7 +165,7 @@ a, a:hover, a:active, a:visited, a:link {
 
 .comment-header{
 	@include border-radius(8px 8px 0px 0px);
-	@include background(image-url("foo.png"), linear-gradient(center top, #fff, #aaa));
+	@include background(image-url('<%= asset_path "foo.png" %>'), linear-gradient(center top, #fff, #aaa));
 	border-style:solid;
 	border-width:1px;
 	border-color:#888;
