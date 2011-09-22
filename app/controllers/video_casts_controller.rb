@@ -26,7 +26,7 @@ class VideoCastsController < InheritedResources::Base
     session[:go_to_after_edit] = video_cast_path{@video_cast}   
     @episode_nr = '#' + @video_cast.episode_nr.to_s
     
-    @episodes = VideoCast.order('episode_nr asc')
+    @episodes = VideoCast.order('episode_nr desc')
 
   end
   

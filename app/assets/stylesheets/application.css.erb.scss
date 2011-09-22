@@ -89,9 +89,13 @@ a, a:hover, a:active, a:visited, a:link {
   background-position: right center;
 }
 
-/* FIXME where is this used? */
+
 .edit{
 	text-align:right;
+}
+
+.center{
+	text-align:center;
 }
 
 .notice{
@@ -248,3 +252,4 @@ a, a:hover, a:active, a:visited, a:link {
 	margin-top:42px;
 	left-margin:12px;
 }
+
