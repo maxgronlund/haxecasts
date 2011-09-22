@@ -5,7 +5,7 @@ class VideoCastsController < InheritedResources::Base
   def index
     @menu = 'admin'
     session[:go_to_after_edit] = video_casts_path
-    @video_casts = VideoCast.order('episode_nr asc').page(params[:page]).per(25)
+    @video_casts = VideoCast.order('episode_nr desc').page(params[:page]).per(25)
   end
   
   def show
