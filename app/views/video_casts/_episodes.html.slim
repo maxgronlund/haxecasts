@@ -1,0 +1,9 @@
+.grid-3.alpha.omega.top-margin
+  .comment-header
+    .content
+      b other episodes
+  .border-box 
+    .content
+      - @episodes.each do |episode| 
+	    = link_to '• '+episode.short_title[0...36] , video_cast_path(episode) if episode.short_title?
+	    br

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110910224044) do
+ActiveRecord::Schema.define(:version => 20110922192410) do
 
   create_table "code_examples", :force => true do |t|
     t.string   "title"
@@ -82,6 +82,7 @@ ActiveRecord::Schema.define(:version => 20110910224044) do
     t.text     "notes"
     t.integer  "episode_nr"
     t.string   "play_time"
+    t.string   "short_title"
   end
 
 end
