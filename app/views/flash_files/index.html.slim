@@ -1,0 +1,21 @@
+h1 Listing flash_files
+
+table
+  tr
+    th Video cast
+    th Swf
+    th
+    th
+    th
+
+  - @flash_files.each do |flash_file|
+    tr
+      td= flash_file.video_cast_id
+      td= flash_file.swf
+      td= link_to 'Show', flash_file
+      td= link_to 'Edit', edit_flash_file_path(flash_file)
+      td= link_to 'Destroy', flash_file, :confirm => 'Are you sure?', :method => :delete
+
+br
+
+= link_to 'New Flash file', new_flash_file_path

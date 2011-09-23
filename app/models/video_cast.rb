@@ -3,6 +3,7 @@ class VideoCast < ActiveRecord::Base
   has_many :code_examples
   has_many :comments
   has_many :resource_urls
+  has_many :flash_files
 
   
   mount_uploader :mp4, Mp4Uploader

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110922192410) do
+ActiveRecord::Schema.define(:version => 20110923062400) do
 
   create_table "code_examples", :force => true do |t|
     t.string   "title"
@@ -27,6 +27,13 @@ ActiveRecord::Schema.define(:version => 20110922192410) do
     t.text     "body"
     t.integer  "user_id"
     t.integer  "video_cast_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "flash_files", :force => true do |t|
+    t.integer  "video_cast_id"
+    t.string   "swf"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

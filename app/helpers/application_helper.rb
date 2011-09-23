@@ -26,7 +26,7 @@ module ApplicationHelper
               width="110"
               height="14"
               id="clippy" >
-      <param name="movie" value="/assets/clippy.swf"/>
+      <param name="movie" value="#{asset_path('clippy.swf')}"/>
       <param name="allowScriptAccess" value="always" />
       <param name="quality" value="high" />
       <param name="scale" value="noscale" />
@@ -48,3 +48,6 @@ module ApplicationHelper
   end
 
 end
+
+
+#{asset_path}

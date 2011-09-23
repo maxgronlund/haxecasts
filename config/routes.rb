@@ -1,4 +1,6 @@
 HaXeCasts::Application.routes.draw do
+  
+
 #  resources :resource_urls
 #  resources :code_examples
 #  resources :comments
@@ -29,6 +31,7 @@ HaXeCasts::Application.routes.draw do
     resources :resource_urls
     resources :code_examples
     resources :comments
+    resources :flash_files
   end
   
 #  get "home/index"
@@ -94,6 +97,8 @@ HaXeCasts::Application.routes.draw do
   # match ':controller(/:action(/:id(.:format)))'
 end
 HaXeCasts::Application.routes.draw do
+  resources :flash_files
+
   resources :resource_urls
 
   resources :code_examples
@@ -186,6 +191,8 @@ HaXeCasts::Application.routes.draw do
   # match ':controller(/:action(/:id(.:format)))'
 end
 HaXeCasts::Application.routes.draw do
+  resources :flash_files
+
   resources :resource_urls
 
   resources :code_examples

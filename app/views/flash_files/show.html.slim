@@ -1,0 +1,11 @@
+.header
+  .grid-9
+    b Video cast:
+    = @flash_file.video_cast_id
+    
+    b Swf:
+    = @flash_file.swf
+    
+    = link_to 'Edit', edit_flash_file_path(@flash_file)
+    '&nbsp;
+

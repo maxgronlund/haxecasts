@@ -7,6 +7,7 @@ class Ability
         can :manage, :all
       elsif user.admin?
         can :manage, Comment
+        can :read, FlashFile
         can :manage, User
         can :manage, ResourceUrl
         can :manage, TextContent
@@ -19,6 +20,7 @@ class Ability
         # Ordinary user
         can :create, Comment
         can :manage, Comment, :user_id => user.id # <--- Allow user to manage own comments
+        can :read, FlashFile
         can :manage, User, :id => user.id # <--- Allow user to manage self
         can :read, TextContent
         can :read, VideoCast
@@ -30,6 +32,7 @@ class Ability
     else
       # When not logged in
       can :read, Comment
+      can :read, FlashFile
       can :read, TextContent
       can :create, User # <----------- Uncomment this to alow users to signup by them self
       can :read, VideoCast
