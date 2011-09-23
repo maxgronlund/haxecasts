@@ -32,7 +32,7 @@ module ApplicationHelper
       <param name="scale" value="noscale" />
       <param NAME="FlashVars" value="text=#{text}">
       <param name="bgcolor" value="#{bgcolor}">
-      <embed src="/assets/clippy.swf"
+      <embed src="#{asset_path('clippy.swf')}"
              width="110"
              height="14"
              name="clippy"
