@@ -16,6 +16,7 @@
 //= require sh_html
 //= require sh_main.min
 //= require rails.validations
+//= require swfobject
 
 
 $(function() {

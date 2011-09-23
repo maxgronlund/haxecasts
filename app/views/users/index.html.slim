@@ -28,10 +28,10 @@ div class="sort-list-header grid-12"
         =user.role
       .grid-3.omega
         = link_to t('system.show'), user
-        | | 
+        '&nbsp;|'&nbsp; 
         = link_to t('system.edit'), edit_user_path(user)
         - unless user.is_first_user?
-          | | 
+          '&nbsp;|'&nbsp; 
           = link_to t('system.delete'), user, :confirm => 'Are you sure?', :method => :delete
   = link_to t('user.create_user'), new_user_path
       

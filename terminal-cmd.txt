@@ -1,3 +1,5 @@
 rails g scaffold code_example title:string body:text
 
 rails g scaffold flash_file video_cast_id:integer  swf:string 
+
+rails g migration AddSizeToFlashFile size_x:integer size_y:integer

@@ -25,7 +25,7 @@ module ApplicationHelper
       <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
               width="110"
               height="14"
-              id="clippy" >
+              id="clippy">
       <param name="movie" value="#{asset_path('clippy.swf')}"/>
       <param name="allowScriptAccess" value="always" />
       <param name="quality" value="high" />
@@ -48,6 +48,3 @@ module ApplicationHelper
   end
 
 end
-
-
-#{asset_path}
