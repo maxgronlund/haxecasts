@@ -1,0 +1,10 @@
+.grid-9.alpha.omaga
+  .swf-header
+    h2 Demo
+  -for flash_file in @video_cast.flash_files do
+    .grid-9.alpha.omega
+      = render :partial => 'shared/swf_header', :locals => { flash_file: flash_file }
+      = render :partial => 'flash_example', :locals => { flash_file: flash_file }
+  - if can_edit?
+    .edit
+      = link_to 'new flash file', new_video_cast_flash_file_path(@video_cast)

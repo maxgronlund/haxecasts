@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110923090518) do
+ActiveRecord::Schema.define(:version => 20110924115042) do
 
   create_table "code_examples", :force => true do |t|
     t.string   "title"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(:version => 20110923090518) do
     t.datetime "updated_at"
     t.integer  "size_x"
     t.integer  "size_y"
+    t.string   "title"
   end
 
   create_table "resource_urls", :force => true do |t|

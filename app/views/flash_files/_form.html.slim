@@ -1,5 +1,6 @@
 = simple_form_for [@video_cast, @flash_file] do |f|
   = render 'shared/error_messages', :taget => @flash_file
+  = f.input :title
   = f.input :swf
   = f.input :size_x
   = f.input :size_y
