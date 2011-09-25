@@ -1,6 +1,8 @@
 HaXeCasts::Application.routes.draw do
   
 
+  resources :badges
+
 #  resources :resource_urls
 #  resources :code_examples
 #  resources :comments
@@ -97,6 +99,8 @@ HaXeCasts::Application.routes.draw do
   # match ':controller(/:action(/:id(.:format)))'
 end
 HaXeCasts::Application.routes.draw do
+  resources :badges
+
   resources :flash_files
 
   resources :resource_urls
@@ -191,6 +195,8 @@ HaXeCasts::Application.routes.draw do
   # match ':controller(/:action(/:id(.:format)))'
 end
 HaXeCasts::Application.routes.draw do
+  resources :badges
+
   resources :flash_files
 
   resources :resource_urls
