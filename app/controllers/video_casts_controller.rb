@@ -19,6 +19,8 @@ class VideoCastsController < InheritedResources::Base
       @video = VideoCast.find(params[:id]).mp4
     elsif browser.opera?
       @video = VideoCast.find(params[:id]).m4v
+    elsif browser.ie6?
+      @video = VideoCast.find(params[:id]).mp4
     else
       @video = VideoCast.find(params[:id]).mp4
     end

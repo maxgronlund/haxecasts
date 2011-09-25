@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110925122332) do
+ActiveRecord::Schema.define(:version => 20110925140119) do
 
   create_table "badges", :force => true do |t|
     t.string   "url"
@@ -100,6 +100,7 @@ ActiveRecord::Schema.define(:version => 20110925122332) do
     t.integer  "episode_nr"
     t.string   "play_time"
     t.string   "short_title"
+    t.string   "webm"
   end
 
 end
