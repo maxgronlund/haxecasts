@@ -1,10 +1,11 @@
-
-
 <video class="sublime"
        width="1012" height="632"
        preload="none">
-  <source src="<%=@video_cast.mp4%>" />
-  <source src="<%=@video_cast.mp4%>" />
-  <source src="<%=@video_cast.webm%>" />
-  <source src="<%=@video_cast.ogv%>" />
+  <% if browser.opera?%>
+     <source src="<%=@video_cast.mp4%>" />
+  <%else%>
+    <source src="<%=@video_cast.mp4%>" />
+    <source src="<%=@video_cast.webm%>" />
+    <source src="<%=@video_cast.ogv%>" />
+  <%end%>
 </video>
