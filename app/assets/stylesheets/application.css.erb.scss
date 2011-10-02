@@ -263,12 +263,18 @@ a, a:hover, a:active, a:visited, a:link {
 
 .badge{
 	width:517px;
-	h1{
+	h1 a{
 		width:517px;
 		position:absolute;
 		top:200px;
 		text-align:center;
-		color:#444;
+		color:#888;
 		@include font-header();
 	}
+	a:hover{
+		color:#000;
+	}
+}
+.badge:hover{
+	@include opacity(0.8)
 }
