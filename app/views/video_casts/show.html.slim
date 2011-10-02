@@ -9,8 +9,10 @@
    
     .grid-11.omega
       h1 =  @video_cast.title
-      .grid-8.suffix-3.alpha.omega
+      .grid-8.suffix-2.alpha
         = markdown(@video_cast.body)
+      .grid-1.omega
+        = render 'tweet'
       
 .grid-12.top-margin
   = render 'video'
