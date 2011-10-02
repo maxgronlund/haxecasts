@@ -1,5 +1,7 @@
 .grid-12
-  = link_to image_tag(@badge.image), @badge.url, :target => "_blank"
+  .badge
+    = link_to image_tag(@badge.image), @badge.url, :target => "_blank"
+    h1 = markdown(@badge.body) if @badge.body
 
   
 

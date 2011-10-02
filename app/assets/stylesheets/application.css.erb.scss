@@ -260,3 +260,15 @@ a, a:hover, a:active, a:visited, a:link {
 .stick-to-top{
 	margin:0px;
 }
+
+.badge{
+	width:517px;
+	h1{
+		width:517px;
+		position:absolute;
+		top:200px;
+		text-align:center;
+		color:#444;
+		@include font-header();
+	}
+}

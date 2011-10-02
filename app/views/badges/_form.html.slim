@@ -2,6 +2,7 @@
   = render 'shared/error_messages', :taget => @badge
   = f.input :url
   = f.input :image
+  = f.input :body
   .actions.top-margin
 	= f.submit t('system.save'), disable_with: 'Saving...'
     = image_tag "loader.gif", alt: "", width: "16", height: "16", style: "display: none;", class: 'spinner'
