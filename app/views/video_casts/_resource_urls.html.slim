@@ -1,7 +1,7 @@
 .grid-9.alpha.omega.top-margin
   - @video_cast.resource_urls.each do |resource_url|
     .grid-8.alpha.resource_box
-      = link_to ' • '+resource_url.resource_url, resource_url.resource_url
+      = link_to ' • '+resource_url.title, resource_url.resource_url
     .grid-1.omega
       - if can_edit?
         .edit

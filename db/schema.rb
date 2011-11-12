@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111002182435) do
+ActiveRecord::Schema.define(:version => 20111112131951) do
 
   create_table "badges", :force => true do |t|
     t.string   "url"
@@ -50,10 +50,11 @@ ActiveRecord::Schema.define(:version => 20111002182435) do
   end
 
   create_table "resource_urls", :force => true do |t|
-    t.string   "resource_url"
     t.integer  "video_cast_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "resource_url"
+    t.string   "title"
   end
 
   create_table "text_contents", :force => true do |t|

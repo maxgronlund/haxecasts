@@ -1,5 +1,5 @@
 = simple_form_for [@video_cast, @resource_url] do |f|
   = render 'shared/error_messages', :taget => @resource_url
-
+  = f.input :title
   = f.input :resource_url
   = f.submit 'Save'
