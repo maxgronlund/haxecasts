@@ -6,20 +6,21 @@
   = f.input :email
   = f.input :password
   = f.input :password_confirmation
-
-
-
-
-  - if @user.image.present?
+  
+  
+  
+  
+  - if @user.image?  
     - @user.image.version_dimensions.keys.each do |version|
+      
       .label
         | #{version}:
         = link_to t('image.re_crop'), crop_user_path(@user, :version => version)
         br
-        = image_tag(@user.image_url version) if @user.image?
-
-        
-        br
+        = image_tag(@user.image_url version) 
+  
+      
+      br
   br
   = f.input :image
   = f.hidden_field :image_cache
