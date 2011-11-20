@@ -5,7 +5,7 @@
     .grid-1.omega
       - if can_edit?
         .edit
-          = link_to 'edit', edit_video_cast_resource_url_path(resource_url)
+          = link_to 'edit', edit_video_cast_resource_url_path(@video_cast, resource_url)
           '&nbsp;|&nbsp;
           = link_to 'delete', resource_url, :confirm => 'Are you sure?', :method => :delete
   
