@@ -1,6 +1,8 @@
 HaXeCasts::Application.routes.draw do
   
 
+  get "fullscreen/index"
+
   get "about/index"
 
   resources :badges
@@ -101,6 +103,8 @@ HaXeCasts::Application.routes.draw do
   # match ':controller(/:action(/:id(.:format)))'
 end
 HaXeCasts::Application.routes.draw do
+  get "fullscreen/index"
+
   get "about/index"
 
   resources :badges
@@ -199,6 +203,8 @@ HaXeCasts::Application.routes.draw do
   # match ':controller(/:action(/:id(.:format)))'
 end
 HaXeCasts::Application.routes.draw do
+  get "fullscreen/index"
+
   get "about/index"
 
   resources :badges
