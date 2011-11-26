@@ -11,10 +11,20 @@
       h1 =  @video_cast.title
       .grid-6.suffix-2.alpha
         = markdown(@video_cast.body)
-      .grid-1
-        = render 'tweet'
-      .grid-2.omega
-        = render 'face_book.html'
+      .grid-3.omega
+        .grid-1.alpha
+          = render 'tweet'
+        .grid-2.omega
+          = render 'face_book.html'
+        .grid-3.alpha.omega
+          'download:
+          = link_to 'mp4', @video_cast.mp4.url
+          '&nbsp;
+          = link_to 'webm', @video_cast.webm.url
+          '&nbsp;
+          = link_to 'ogv', @video_cast.ogv.url
+          '&nbsp;
+          = link_to 'm4v', @video_cast.m4v.url
       
 .grid-12.top-margin
   = render 'video'
