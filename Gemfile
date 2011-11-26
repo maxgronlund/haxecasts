@@ -26,6 +26,7 @@ gem 'tinymce-rails'
 gem 'simple_form'
 gem "nested_form", :git => "git://github.com/ryanb/nested_form.git"
 gem "browser"
+gem "friendly_id", "~> 4.0.0.beta14"
 
 
 
