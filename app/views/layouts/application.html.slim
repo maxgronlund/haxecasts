@@ -20,6 +20,7 @@ html
     = render "shared/webmaster_tools"
 
   body.body-color class=("#{controller.controller_name} #{controller.controller_name}-#{params[:action]}") onload="sh_highlightDocument();
+    = yield :body
     .top_banner
       .grid-container.content-color class=("background_grid" if grid_is_on?)
         -#= render "shared/jmenu"
