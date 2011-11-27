@@ -22,11 +22,11 @@
       '&nbsp;
       = link_to 'm4v', @video_cast.m4v.url    
     .grid-5.prefix-1.omega
-      .grid-2.alpha
-        = render 'face_book'
-      .grid-3.omega.edit
+      .grid-3.alpha
         = render 'plusone'
         = render 'tweet'
+      .grid-2.omega.edit
+        = render 'face_book'
       
 .grid-12.top-margin
   = render 'video'
