@@ -16,7 +16,7 @@ html
       var session_key      = '#{cookies[Rails.application.config.session_options[:key]]}';
       var session_key_name = '#{Rails.application.config.session_options[:key]}';
     = yield :head 
-    = render "shared/google_analytics"
+    = render "shared/webmaster_tools"
 
   body.body-color class=("#{controller.controller_name} #{controller.controller_name}-#{params[:action]}") onload="sh_highlightDocument();
     .top_banner
