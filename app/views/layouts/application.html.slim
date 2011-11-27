@@ -2,12 +2,11 @@ doctype html
 html
   head
     title haXe Casts
-    script type="text/javascript" src="https://apis.google.com/js/plusone.js"
+    
 
     /[if lt IE 9]
       script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'
     = stylesheet_link_tag    "application"
-
     = javascript_include_tag 'application', 'http://cdn.sublimevideo.net/js/2wr8vc58.js'
 
     = csrf_meta_tag
@@ -17,6 +16,7 @@ html
       var session_key      = '#{cookies[Rails.application.config.session_options[:key]]}';
       var session_key_name = '#{Rails.application.config.session_options[:key]}';
     = yield :head 
+    script type="text/javascript" src="https://apis.google.com/js/plusone.js"
     = render "shared/webmaster_tools"
 
   body.body-color class=("#{controller.controller_name} #{controller.controller_name}-#{params[:action]}") onload="sh_highlightDocument();
