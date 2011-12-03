@@ -7,4 +7,12 @@ class Comment < ActiveRecord::Base
   def user 
     User.find(user_id)
   end
+  
+  def self.search(search)
+    if search
+      where('body LIKE ?', "%#{search}%")
+    else
+      scoped
+    end
+  end
 end
