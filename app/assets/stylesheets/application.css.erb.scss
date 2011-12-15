@@ -278,3 +278,9 @@ a, a:hover, a:active, a:visited, a:link {
 .badge:hover{
 	@include opacity(0.8)
 }
+
+.input .boolean{
+	display:inline;
+	margin-top:8px;
+	margin-bottom:8px;
+}

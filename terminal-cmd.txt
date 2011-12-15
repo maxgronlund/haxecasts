@@ -5,3 +5,5 @@ rails g scaffold flash_file video_cast_id:integer  swf:string
 rails g migration AddSizeToFlashFile size_x:integer size_y:integer
 
 rails g scaffold badge url:string image:string
+
+rails g migration AddPublishToVideoCast publish:boolean

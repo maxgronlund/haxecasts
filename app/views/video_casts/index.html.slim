@@ -1,29 +1,31 @@
 .front-page
   - @video_casts.each do |video_cast|
-    .grid-12.top-margin
-  
-    .grid-4
-        .image-box
-          = link_to image_tag(video_cast.image_url :large), video_cast_path(video_cast) if video_cast.image?
-        - if can?(:manage, VideoCast)
-          .edit
-            = link_to t('system.edit'), edit_video_cast_path(video_cast)
-            '&nbsp; 
-            = link_to t('system.delete'), video_cast, :confirm => 'Are you sure?', :method => :delete
-    .grid-8
-      h1 = link_to video_cast.title, video_cast
-      b Episode # 
-      b = video_cast.episode_nr
-      '&nbsp;
-      'time 
-      '-
-      = video_cast.play_time
-      = markdown(video_cast.body)
-      .grid-8.alpha.omega
-        = link_to t('system.show'), video_cast, class: 'fancy'
-    .grid-12
-      hr
-        
+    - if video_cast.publish? || can_edit?
+      .grid-12.top-margin
+        - if !video_cast.publish?
+          '!Not published
+      .grid-4
+          .image-box
+            = link_to image_tag(video_cast.image_url :large), video_cast_path(video_cast) if video_cast.image?
+          - if can?(:manage, VideoCast)
+            .edit
+              = link_to t('system.edit'), edit_video_cast_path(video_cast)
+              '&nbsp; 
+              = link_to t('system.delete'), video_cast, :confirm => 'Are you sure?', :method => :delete
+      .grid-8
+        h1 = link_to video_cast.title, video_cast
+        b Episode # 
+        b = video_cast.episode_nr
+        '&nbsp;
+        'time 
+        '-
+        = video_cast.play_time
+        = markdown(video_cast.body)
+        .grid-8.alpha.omega
+          = link_to t('system.show'), video_cast, class: 'fancy'
+      .grid-12
+        hr
+          
   .pagination-12 
     = paginate @video_casts
   - if can?(:manage, VideoCast)

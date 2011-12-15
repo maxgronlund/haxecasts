@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111126204559) do
+ActiveRecord::Schema.define(:version => 20111215201005) do
 
   create_table "badges", :force => true do |t|
     t.string   "url"
@@ -104,6 +104,7 @@ ActiveRecord::Schema.define(:version => 20111126204559) do
     t.string   "short_title"
     t.string   "webm"
     t.string   "slug"
+    t.boolean  "publish"
   end
 
   add_index "video_casts", ["slug"], :name => "index_video_casts_on_slug", :unique => true
