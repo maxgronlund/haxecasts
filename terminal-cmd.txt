@@ -9,3 +9,5 @@ rails g scaffold badge url:string image:string
 rails g migration AddPublishToVideoCast publish:boolean
 
 rails g migration AddSourceCodeToVideoCast source_code:string
+
+rails g migration AddEnableVideoToVideoCast enable_video:boolean

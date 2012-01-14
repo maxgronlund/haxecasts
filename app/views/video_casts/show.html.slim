@@ -32,7 +32,7 @@
         = render 'face_book'
       
 .grid-12.top-margin
-  = render 'video'
+  = render 'video' if @video_cast.enable_video
   -if can?(:manage, VideoCast)
     .edit
       = link_to t('system.edit'), edit_video_cast_path(@video_cast)
