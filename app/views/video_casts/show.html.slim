@@ -14,13 +14,13 @@
   .grid-12
     .grid-5.prefix-1.alpha
       'download:
-      = link_to 'mp4', @video_cast.mp4.url
+      = link_to 'mp4', @video_cast.mp4.url if @video_cast.mp4.url 
       '&nbsp;
-      = link_to 'webm', @video_cast.webm.url
+      = link_to 'webm', @video_cast.webm.url if @video_cast.webm.url 
       '&nbsp;
-      = link_to 'ogv', @video_cast.ogv.url
+      = link_to 'ogv', @video_cast.ogv.url if @video_cast.ogv.url 
       '&nbsp;
-      = link_to 'm4v', @video_cast.m4v.url    
+      = link_to 'm4v', @video_cast.m4v.url if @video_cast.m4v.url 
       '&nbsp;
       = link_to 'source code', @video_cast.source_code.url if @video_cast.source_code.url 
       
