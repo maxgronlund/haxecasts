@@ -7,3 +7,5 @@ rails g migration AddSizeToFlashFile size_x:integer size_y:integer
 rails g scaffold badge url:string image:string
 
 rails g migration AddPublishToVideoCast publish:boolean
+
+rails g migration AddSourceCodeToVideoCast source_code:string

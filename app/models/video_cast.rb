@@ -12,6 +12,7 @@ class VideoCast < ActiveRecord::Base
   mount_uploader :m4v, M4vUploader
   mount_uploader :ogv, OgvUploader
   mount_uploader :webm, WebmUploader
+  mount_uploader :source_code,SourceCodeUploader
   
   serialize :crop_params, Hash
   mount_uploader :image, ImageUploader
