@@ -22,7 +22,7 @@
       '&nbsp;
       = link_to 'm4v', @video_cast.m4v.url    
       '&nbsp;
-      = link_to 'source code', @video_cast.source_code.url
+      = link_to 'source code', @video_cast.source_code.url if @video_cast.source_code.url 
       
     .grid-5.prefix-1.omega
       .grid-3.alpha
