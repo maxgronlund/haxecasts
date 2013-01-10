@@ -1,0 +1,103 @@
+/*
+Syntax error: File to import not found or unreadable: partials/color.
+              Load paths:
+                Compass::SpriteImporter
+                /Users/synthmax/Dropbox/haxecasts/public/stylesheets/sass
+                /Users/synthmax/Dropbox/haxecasts/app/assets/stylesheets
+                /Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/compass-0.11.5/frameworks/blueprint/stylesheets
+                /Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/compass-0.11.5/frameworks/compass/stylesheets
+                /Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/compass-960-plugin-0.10.4/stylesheets
+        on line 17 of /Users/synthmax/Dropbox/haxecasts/app/assets/stylesheets/application.css.erb.scss
+
+12: */
+13: 
+14: @import "compass/css3";
+15: @import "compass/css3/border-radius";
+16: @import "compass/css3/opacity";
+17: @import "partials/color";
+18: @import "partials/font";
+19: @import "partials/dimentions";
+20: @import "partials/fancy-buttons";
+21: 
+22: 
+
+Backtrace:
+/Users/synthmax/Dropbox/haxecasts/app/assets/stylesheets/application.css.erb.scss:17
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/tree/import_node.rb:45:in `import'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:215:in `visit_import'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:98:in `visit'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/tree/root_node.rb:20:in `render'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/engine.rb:315:in `_render'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/engine.rb:263:in `block in render'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/util.rb:373:in `silence_sass_warnings'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/engine.rb:263:in `render'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/plugin.rb:54:in `check_for_updates'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/sass-3.2.5/lib/sass/plugin/rack.rb:51:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/warden-1.2.1/lib/warden/manager.rb:35:in `block in call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/warden-1.2.1/lib/warden/manager.rb:34:in `catch'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/warden-1.2.1/lib/warden/manager.rb:34:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/client_side_validations-3.2.1/lib/client_side_validations/middleware.rb:21:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/actionpack-3.2.11/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/rack-1.4.3/lib/rack/etag.rb:23:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/rack-1.4.3/lib/rack/conditionalget.rb:25:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/actionpack-3.2.11/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/actionpack-3.2.11/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/actionpack-3.2.11/lib/action_dispatch/middleware/flash.rb:242:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/rack-1.4.3/lib/rack/session/abstract/id.rb:210:in `context'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/rack-1.4.3/lib/rack/session/abstract/id.rb:205:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/actionpack-3.2.11/lib/action_dispatch/middleware/cookies.rb:341:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/activerecord-3.2.11/lib/active_record/query_cache.rb:64:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/activerecord-3.2.11/lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/actionpack-3.2.11/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:405:in `_run__3134638822380633543__call__478567105745062454__callbacks'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:405:in `__run_callback'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/activesupport-3.2.11/lib/active_support/callbacks.rb:81:in `run_callbacks'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/actionpack-3.2.11/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/actionpack-3.2.11/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/actionpack-3.2.11/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/actionpack-3.2.11/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/actionpack-3.2.11/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/railties-3.2.11/lib/rails/rack/logger.rb:32:in `call_app'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/railties-3.2.11/lib/rails/rack/logger.rb:16:in `block in call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/activesupport-3.2.11/lib/active_support/tagged_logging.rb:22:in `tagged'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/railties-3.2.11/lib/rails/rack/logger.rb:16:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/actionpack-3.2.11/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/rack-1.4.3/lib/rack/methodoverride.rb:21:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/rack-1.4.3/lib/rack/runtime.rb:17:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/activesupport-3.2.11/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/rack-1.4.3/lib/rack/lock.rb:15:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/actionpack-3.2.11/lib/action_dispatch/middleware/static.rb:62:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/railties-3.2.11/lib/rails/engine.rb:479:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/railties-3.2.11/lib/rails/application.rb:223:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/rack-1.4.3/lib/rack/content_length.rb:14:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/railties-3.2.11/lib/rails/rack/log_tailer.rb:17:in `call'
+/Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/rack-1.4.3/lib/rack/handler/webrick.rb:59:in `service'
+/Users/synthmax/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/synthmax/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/synthmax/.rvm/rubies/ruby-1.9.2-p290/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: partials/color.\A               Load paths:\A                 Compass::SpriteImporter\A                 /Users/synthmax/Dropbox/haxecasts/public/stylesheets/sass\A                 /Users/synthmax/Dropbox/haxecasts/app/assets/stylesheets\A                 /Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/compass-0.11.5/frameworks/blueprint/stylesheets\A                 /Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/compass-0.11.5/frameworks/compass/stylesheets\A                 /Users/synthmax/.rvm/gems/ruby-1.9.2-p290@railspre/gems/compass-960-plugin-0.10.4/stylesheets\A         on line 17 of /Users/synthmax/Dropbox/haxecasts/app/assets/stylesheets/application.css.erb.scss\A \A 12: */\A 13: \A 14: @import \"compass/css3\";\A 15: @import \"compass/css3/border-radius\";\A 16: @import \"compass/css3/opacity\";\A 17: @import \"partials/color\";\A 18: @import \"partials/font\";\A 19: @import \"partials/dimentions\";\A 20: @import \"partials/fancy-buttons\";\A 21: \A 22: "; }

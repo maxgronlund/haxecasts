@@ -7,10 +7,10 @@ module ApplicationHelper
     link_to title, {:sort => column, :direction => direction}, {:class => css_class}   
   end
   
-  def markdown(text)
-    options = [:hard_wrap, :filter_html, :autolink, :no_intraemphasis, :fenced_code, :gh_blockcode]
-    Redcarpet.new(text, *options).to_html.html_safe
-  end
+  #def simple_format(text)
+  #  options = [:hard_wrap, :filter_html, :autolink, :no_intraemphasis, :fenced_code, :gh_blockcode]
+  #  Redcarpet.new(text, *options).to_html.html_safe
+  #end
   
   def can_edit?
     user_signed_in? && current_user.admin_or_super?

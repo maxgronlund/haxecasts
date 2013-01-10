@@ -11,7 +11,7 @@
         i = comment.created_at.strftime("%d.%m.%Y")
     .border-box 
       .content
-        = markdown(comment.body)
+        = simple_format(comment.body)
         .edit
           -if can?(:manage, comment)
             = link_to 'edit', edit_video_cast_comment_path(comment.video_cast, comment)

@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.1.0'
+gem 'rails', '3.2.11'
 gem 'rails-i18n'
 
 # Bundle edge Rails instead:
@@ -9,8 +9,8 @@ gem 'rails-i18n'
 gem 'mysql2'
 
 # Asset template engines
-gem 'sass-rails', "~> 3.1.0.rc"
-gem 'coffee-script'
+gem 'coffee-rails', '~> 3.2.1'
+gem 'sass-rails',   '~> 3.2.3'
 gem 'uglifier'
 gem 'jquery-rails'
 gem 'inherited_resources'
@@ -19,14 +19,14 @@ gem "slim-rails"
 gem 'client_side_validations'
 gem 'kaminari'
 gem 'has_scope'
-gem 'redcarpet'
+#gem 'redcarpet'
 gem 'devise'
 # gem 'tiny_mce'
 gem 'tinymce-rails'
 gem 'simple_form'
-gem "nested_form", :git => "git://github.com/ryanb/nested_form.git"
+gem "nested_form"#, :git => "git://github.com/ryanb/nested_form.git"
 gem "browser"
-gem "friendly_id", "~> 4.0.0.beta14"
+gem "friendly_id"
 
 
 
@@ -40,7 +40,7 @@ gem 'capistrano'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
 # JavaScript runtime is required for Rails 3.1; this should work on Ubuntu
-gem 'therubyracer', '>= 0.8.2'
+#gem 'therubyracer', '>= 0.8.2'
 
 group :test do
   # Pretty printed test output
@@ -54,14 +54,14 @@ group :test do
   #gem 'autotest-growl'
   gem 'database_cleaner'
   gem 'factory_girl_rails'
-  gem 'remarkable_activerecord', '~> 4.0.0.alpha4'
+  #gem 'remarkable_activerecord', '~> 4.0.0.alpha4'
   #gem 'ruby-fsevent'
   #gem 'watchr'
   #gem 'spork'
 end
 
-
-gem "compass", :git => "git://github.com/chriseppstein/compass.git", :branch => "master"
+gem 'compass'
+gem 'compass-rails'
 gem 'chunky_png' # compass HEAD uses this for sass sprites, but lacks dependency :(
 gem "compass-960-plugin", :require => "ninesixty"
 

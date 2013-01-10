@@ -10,7 +10,7 @@
     .grid-11.omega
       h1 =  @video_cast.title
       .grid-7.alpha
-        = markdown(@video_cast.body)
+        = simple_format(@video_cast.body)
   .grid-12
     .grid-5.prefix-1.alpha
       'download:
@@ -40,7 +40,7 @@
   .grid-9.alpha
       = render 'resource_urls'
       .grid-9.alpha.omega.top-margin
-        = markdown(@video_cast.notes)
+        = simple_format(@video_cast.notes)
       = render 'code_examples'
       = render 'flash_examples'
       = render 'comments'

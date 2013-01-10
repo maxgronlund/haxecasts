@@ -2,7 +2,7 @@
 
   
   -for code_example in @video_cast.code_examples do
-    = markdown(code_example.comment) if code_example.comment
+    = simple_format(code_example.comment) if code_example.comment
     - if code_example.title != ''
       .code_box
         .header 

@@ -2,7 +2,7 @@
   .badge
     = link_to image_tag(@badge.image), @badge.url, :target => "_blank"
     - if @badge.body
-      h1 = link_to markdown(@badge.body), @badge.url
+      h1 = link_to simple_format(@badge.body), @badge.url
 
   
 
